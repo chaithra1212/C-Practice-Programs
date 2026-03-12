@@ -1,0 +1,33 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+using System;
+class MethodOverriding{
+        public virtual void Msg(){
+            Console.WriteLine("HEllo Good Morning");
+        }
+    }
+    class B:MethodOverriding{
+        public override void Msg()
+        {
+            Console.WriteLine("Hello Good aftenoon");
+        }
+    }
+class HelloWorld {
+    
+  static void Main() {
+      //example for method overloading
+     MethodOverriding mr=new MethodOverriding();
+     mr.Msg();
+     B b=new B();
+     b.Msg();
+    MethodOverriding br=new B();
+    br.Msg();
+
+  } 
+}
